@@ -32,10 +32,10 @@ class ViewController: UIViewController {
             socendVC.user = User(name: lableName.text!, age: lableAge.text!)
             socendVC.modalPresentationStyle = .fullScreen
             
-            //present(socendVC, animated: true , completion: nil)
+            present(socendVC, animated: true , completion: nil)
             
             // when navigation controller
-            navigationController?.pushViewController( socendVC, animated: true)
+            //navigationController?.pushViewController( socendVC, animated: true)
         }
         
         

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CgZ-47-r7S">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Pass Data By Protocol View Controller-->
+        <scene sceneID="WAP-xe-Zam">
+            <objects>
+                <viewController id="CgZ-47-r7S" customClass="FirstPassDataByProtocolViewController" customModule="PassingDataBetwenActivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HUN-C9-ZSk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-6k-n1d">
+                                <rect key="frame" x="130.33333333333337" y="406.66666666666669" width="132.66666666666663" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="go to get Data"/>
+                                <connections>
+                                    <action selector="goToGetData:" destination="CgZ-47-r7S" eventType="touchUpInside" id="zFm-QO-6Xu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q4K-C5-sSJ">
+                                <rect key="frame" x="20" y="159" width="353" height="20.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9ae-GG-QHi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Aze-6k-n1d" firstAttribute="centerX" secondItem="HUN-C9-ZSk" secondAttribute="centerX" id="2vi-eF-uJG"/>
+                            <constraint firstItem="Aze-6k-n1d" firstAttribute="centerY" secondItem="HUN-C9-ZSk" secondAttribute="centerY" id="4jc-v6-m8r"/>
+                            <constraint firstItem="9ae-GG-QHi" firstAttribute="trailing" secondItem="Q4K-C5-sSJ" secondAttribute="trailing" constant="20" id="jSv-vB-rqJ"/>
+                            <constraint firstItem="Q4K-C5-sSJ" firstAttribute="top" secondItem="9ae-GG-QHi" secondAttribute="top" constant="100" id="jrP-yp-amF"/>
+                            <constraint firstItem="Q4K-C5-sSJ" firstAttribute="leading" secondItem="9ae-GG-QHi" secondAttribute="leading" constant="20" id="zbA-vi-mMm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelData" destination="Q4K-C5-sSJ" id="oSV-DF-Aow"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSC-tg-qMl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-95" y="2611"/>
+        </scene>
+        <!--Socned Pass Data By Protocol View Controller-->
+        <scene sceneID="VXb-aW-3nO">
+            <objects>
+                <viewController storyboardIdentifier="socnedStoryboard" id="Qrq-BF-OxI" customClass="SocnedPassDataByProtocolViewController" customModule="PassingDataBetwenActivity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xso-Xd-1H4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anV-2L-H60">
+                                <rect key="frame" x="30" y="89" width="88" height="39"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowshape.backward.fill" catalog="system" title="back"/>
+                                <connections>
+                                    <action selector="backToFirstActivity:" destination="Qrq-BF-OxI" eventType="touchUpInside" id="dyO-S3-rGB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jDr-hX-7Me"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="anV-2L-H60" firstAttribute="top" secondItem="jDr-hX-7Me" secondAttribute="top" constant="30" id="NmV-Ny-Kxn"/>
+                            <constraint firstItem="anV-2L-H60" firstAttribute="leading" secondItem="jDr-hX-7Me" secondAttribute="leading" constant="30" id="bNJ-pS-wrC"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NOG-4T-V1U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="888" y="2611"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.backward.fill" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
